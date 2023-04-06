@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3A07F7E-EEBC-4850-810C-B7E4439B13D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tenyo_Ferreteria_El_Pillo</RootNamespace>
+    <AssemblyName>Tenyo_Ferreteria_El_Pillo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion_Maestra_Tenyo.cs" />
+    <Compile Include="Form_Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Buscar.Designer.cs">
+      <DependentUpon>Form_Buscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Caracteristica_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Caracteristica_Tenyo.Designer.cs">
+      <DependentUpon>Form_Caracteristica_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Categoria_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Categoria_Tenyo.Designer.cs">
+      <DependentUpon>Form_Categoria_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Departamento_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Departamento_Tenyo.Designer.cs">
+      <DependentUpon>Form_Departamento_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Descuento_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Descuento_Tenyo.Designer.cs">
+      <DependentUpon>Form_Descuento_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Empleado_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Empleado_Tenyo.Designer.cs">
+      <DependentUpon>Form_Empleado_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Ficha_Tecnica_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ficha_Tecnica_Tenyo.Designer.cs">
+      <DependentUpon>Form_Ficha_Tecnica_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Inicio.Designer.cs">
+      <DependentUpon>Form_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Registros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Registros.Designer.cs">
+      <DependentUpon>Form_Registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Marca_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Marca_Tenyo.Designer.cs">
+      <DependentUpon>Form_Marca_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Material_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Material_Tenyo.Designer.cs">
+      <DependentUpon>Form_Material_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Medida_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Medida_Tenyo.Designer.cs">
+      <DependentUpon>Form_Medida_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PasilloEstante_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PasilloEstante_Tenyo.Designer.cs">
+      <DependentUpon>Form_PasilloEstante_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Producto_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Producto_Tenyo.Designer.cs">
+      <DependentUpon>Form_Producto_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Proveedor_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Proveedor_Tenyo.Designer.cs">
+      <DependentUpon>Form_Proveedor_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Venta_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Venta_Tenyo.Designer.cs">
+      <DependentUpon>Form_Venta_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Ver_Datos_Tenyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ver_Datos_Tenyo.Designer.cs">
+      <DependentUpon>Form_Ver_Datos_Tenyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Buscar.resx">
+      <DependentUpon>Form_Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Caracteristica_Tenyo.resx">
+      <DependentUpon>Form_Caracteristica_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Categoria_Tenyo.resx">
+      <DependentUpon>Form_Categoria_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Departamento_Tenyo.resx">
+      <DependentUpon>Form_Departamento_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Descuento_Tenyo.resx">
+      <DependentUpon>Form_Descuento_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Empleado_Tenyo.resx">
+      <DependentUpon>Form_Empleado_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ficha_Tecnica_Tenyo.resx">
+      <DependentUpon>Form_Ficha_Tecnica_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Inicio.resx">
+      <DependentUpon>Form_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Registros.resx">
+      <DependentUpon>Form_Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Marca_Tenyo.resx">
+      <DependentUpon>Form_Marca_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Material_Tenyo.resx">
+      <DependentUpon>Form_Material_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Medida_Tenyo.resx">
+      <DependentUpon>Form_Medida_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PasilloEstante_Tenyo.resx">
+      <DependentUpon>Form_PasilloEstante_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Producto_Tenyo.resx">
+      <DependentUpon>Form_Producto_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Proveedor_Tenyo.resx">
+      <DependentUpon>Form_Proveedor_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Venta_Tenyo.resx">
+      <DependentUpon>Form_Venta_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ver_Datos_Tenyo.resx">
+      <DependentUpon>Form_Ver_Datos_Tenyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
